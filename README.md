@@ -1,0 +1,2 @@
+Khalitova Almira       
+Medetkhan Zhaniya

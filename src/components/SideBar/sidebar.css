@@ -1,0 +1,46 @@
+.side-bar{
+    padding-top: 30px;
+    background-color: black;
+    margin-right: 50px;
+}
+
+.spotify-logo{
+    width: 130px;
+    height: 40px;
+    padding: 0px 24px 0px 24px;
+    margin-bottom: 18px;
+}
+
+.side-bar-body {
+    background: black;
+    display: grid;
+    grid-row-gap: 1rem;
+}
+
+.side-bar-item {
+    padding: 0px 6px 0px 6px;
+}
+
+.side-bar-item-top {
+    margin-top: 20px;
+}
+
+.side-bar-item-anchor {
+    padding: 0px 16px 0px 16px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    grid-column-gap: 1rem;
+    font-family: CircularSp;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+.side-bar-item-anchor:hover {
+    color:aliceblue;
+}
+
+.active {
+    color:aliceblue;
+}

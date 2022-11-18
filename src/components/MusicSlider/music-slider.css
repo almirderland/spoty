@@ -1,0 +1,23 @@
+.music-slider {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    color: white;
+}
+
+.player {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.player-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.player-buttons {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}

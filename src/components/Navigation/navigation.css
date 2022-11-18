@@ -1,0 +1,56 @@
+.navigation {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+.nav-arrows {
+    padding: 1rem;
+}
+
+.nav-buttons {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-upgrade {
+    border-radius: 20px;
+    background: black;
+    color: white;
+    padding: .5rem 1rem .5rem 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.nav-user-profile {
+    column-gap: .5rem;
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    padding: .5rem 1rem .5rem 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.nav-modal {
+    position: absolute;
+    right: 1rem;
+    top: 4rem;
+    z-index: 3,
+}
+
+.user-profile {
+    min-width: 200px;
+    max-width: 360px;
+    color: white;
+    border-radius: 4px;
+}
+
+.list-element {
+    padding: 12px 8px 12px 12px;
+    display: flex;
+    justify-content: space-between;
+}

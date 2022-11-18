@@ -1,0 +1,44 @@
+.music-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  grid-template-rows: 1fr 1fr;
+}
+
+.music-item {
+  display: grid;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 80%;
+}
+
+.music-item-image {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.music-item-text-main {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.music-item-text-secondary {
+  font-size: 16px;
+  color: grey;
+  margin-top: 0.5rem;
+}
+
+@keyframes slidein {
+    from {
+      bottom: 0.5rem;
+      opacity: 0%;
+    }
+  
+    to {
+      bottom: 1rem;
+      opacity: 100%;
+    }
+  }
