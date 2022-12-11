@@ -1,0 +1,76 @@
+.login-wrapper{
+    margin: 50px;       
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-item{
+    width: 200px;
+    height:  60px;
+}
+
+form{
+    margin: 50px;
+}
+
+p, h1, span{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+label p:first-child, label p:nth-child(2) {
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+}
+label input{
+    border-radius: 4px;
+    padding: 14px;
+    font-weight: 400;
+    width: 450px;
+}
+
+.btn-item{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.btn-item button{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    background-color: var(--background-base,#1ed760);
+    border: 1px solid #1ed760;
+    color: var(--text-base,#000000);
+    border-radius: 500px;
+    font-size: inherit;
+    padding: 14px 32px;
+    font-weight: 700;
+    /* margin-left: 50px; */
+}
+.bnt-reg{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bnt-reg h3{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.bnt-reg button{
+    width: 450px;
+    padding: 13px 31px;
+    border: 1px solid var(--essential-subdued,#878787);
+    color: var(--text-base,#878787);
+    border-radius: 500px;
+    font-weight: 700;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    padding: 13px 31px;
+}
