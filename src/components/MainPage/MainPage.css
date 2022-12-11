@@ -1,0 +1,15 @@
+.app {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 6fr 1fr;
+}
+
+.top {
+    background: #191414;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.content {
+    color: white;
+}

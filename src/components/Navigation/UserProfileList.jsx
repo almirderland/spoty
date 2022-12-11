@@ -3,6 +3,7 @@ import Divider from "@mui/material/Divider";
 import LogoutIcon from "@mui/icons-material/Logout";
 
 import "./navigation.css";
+import { useNavigate } from "react-router-dom";
 
 const listElements = [
   {
@@ -26,6 +27,12 @@ const listElements = [
 ];
 
 export default function UserProfileList({ lightGrey }) {
+
+  const navigate = useNavigate();
+
+  function logOut () {
+    navigate("/login");
+  }
   return (
     <div
       className="user-profile"
@@ -40,7 +47,7 @@ export default function UserProfileList({ lightGrey }) {
         </div>
       ))}
       <Divider sx={{ backgroundColor: "grey" }} />
-      <div className="list-element">
+      <div onClick={logOut} className="list-element">
         <span>Log out</span>
       </div>
     </div>
