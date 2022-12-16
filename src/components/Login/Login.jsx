@@ -32,6 +32,9 @@ function Login({ setToken }) {
   const toMain = () => {
     naviage("/");
   }
+  const toReg = () => {
+    naviage("/reg");
+  }
 
   return(
     <div className="login-wrapper">
@@ -60,7 +63,7 @@ function Login({ setToken }) {
         <div className='bnt-reg'>
           <hr />
           <h3>Don't have an account?</h3>
-          <button type="submit" >Sign up for Spotify</button>
+          <button onClick={toReg} type="submit" >Sign up for Spotify</button>
         </div>
       </form>
     </div>

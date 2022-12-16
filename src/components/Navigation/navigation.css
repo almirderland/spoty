@@ -53,4 +53,5 @@
     padding: 12px 8px 12px 12px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }

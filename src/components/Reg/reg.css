@@ -1,4 +1,4 @@
-.login-wrapper{
+.reg-wrapper{
     margin: 50px;       
     display: flex;
     align-items:center;
@@ -34,13 +34,27 @@ label input{
     width: 450px;
 }
 
-.btn-item{
+.btn-itemS{
     display: flex;
     align-items: center;
     justify-content:space-between;
 }
+.btn-itemS input{
+    border-radius: 4px;
+    padding: 14px;
+    font-weight: 400;
+    width: 115px;
+}
 
-.btn-item button{
+.bnt-log{
+    /* margin: 50px;        */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bnt-log button{
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
     background-color: var(--background-base,#1ed760);
     border: 1px solid #1ed760;
@@ -49,30 +63,6 @@ label input{
     font-size: inherit;
     padding: 14px 32px;
     font-weight: 700;
-    cursor: pointer;
-    /* margin-left: 50px; */
-}
-.bnt-reg{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.bnt-reg h3{
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-}
-.bnt-reg button{
-    width: 450px;
-    padding: 13px 31px;
-    border: 1px solid var(--essential-subdued,#878787);
-    color: var(--text-base,#878787);
-    border-radius: 500px;
-    font-weight: 700;
-    background-color: transparent;
-    box-sizing: border-box;
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    padding: 13px 31px;
+    margin: 20px 0;
     cursor: pointer;
 }
