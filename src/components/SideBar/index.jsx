@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import spotifyLogo from "../../assets/spotify_logo.png";
 
 import HomeIcon from "@mui/icons-material/Home";
@@ -12,7 +14,7 @@ const sideBarItems = [
   {
     id: "home",
     name: "Home",
-    icon: <HomeIcon/>,
+    icon: <HomeIcon />,
   },
   {
     id: "search",
@@ -46,10 +48,25 @@ export const SideBar = ({ textSubduedGrey }) => {
         }}
       >
         {sideBarItems.map((item) => (
-          <div key={item.id} className={item.id=='create' ? 'side-bar-item side-bar-item-top': 'side-bar-item'}>
+          <div
+            key={item.id}
+            className={
+              item.id == "create"
+                ? "side-bar-item side-bar-item-top"
+                : "side-bar-item"
+            }
+          >
             <div className="side-bar-item-anchor">
               <div className="side-bar-item-icon">{item.icon} </div>
-              {item.name}
+              {item.id === "liked" ? (
+                <div>
+                  <Link to={item.id}> {item.name}</Link>
+                </div>
+              ) : (
+                <p>{item.name}</p>
+              )
+              }
+              
             </div>
           </div>
         ))}

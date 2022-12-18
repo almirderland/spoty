@@ -1,0 +1,65 @@
+.app {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 6fr 1fr;
+}
+
+.liked__top {
+  background: rgb(86,2,111);
+  background: linear-gradient(180deg, rgba(86,2,111,1) 0%, rgba(82,9,121,1) 35%, rgba(0,0,0,1) 100%);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.content {
+  color: white;
+}
+
+.liked__main {
+  display: block;
+}
+
+.liked__title {
+  display: flex;
+  gap: 20px;
+  font-family: CircularSp;
+  font-weight: 700;
+}
+
+#favorite__songs {
+  font-size: 70px;
+  margin-top: 50px;
+}
+.liked__title__user {
+  display: flex;
+  margin-top: 170px;
+}
+
+.song__poster {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.liked__table {
+  margin-top: 10px;
+  width: 95%;
+  font-family: CircularSp;
+  font-weight: 500;
+}
+
+table {
+  background-color: #121212;
+  width: 100%;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+
+.table__row {
+  display: flex;
+  margin-left: 30%;
+}
+.table__row > h1 {
+  margin-left: 20px;
+}
