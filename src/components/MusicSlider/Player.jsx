@@ -82,31 +82,45 @@ export const Player = () => {
   };
 
   const handleNextMusic = () => {
-    setMusicItems((prevMusicItems) =>
-    prevMusicItems.map((item) => {
+    let list = [...musicItems]
+    list.map(item => {
       if (item.id === currentMusic) {
         return {
           ...item,
           play: item.music.pause(),
         };
-      } else return item;
+      }
+      if(item.id == currentMusic + 1){
+        console.log();
+        setCurrentMusic(item.id)
+        return{
+          ...item,
+          play: item.music.play()
+        }
+      }else  return item;
     })
-  );
-    {currentMusic < 4 ? setCurrentMusic(currentMusic + 1) : setCurrentMusic(0)}
+    setMusicItems(list)
   }
 
   const handlePreviousMusic = () => {
-    setMusicItems((prevMusicItems) =>
-    prevMusicItems.map((item) => {
+    let list = [...musicItems]
+    list.map(item => {
       if (item.id === currentMusic) {
         return {
           ...item,
           play: item.music.pause(),
         };
-      } else return item;
+      }
+      if(item.id == currentMusic - 1){
+        console.log();
+        setCurrentMusic(item.id)
+        return{
+          ...item,
+          play: item.music.play()
+        }
+      }else  return item;
     })
-  );
-    {currentMusic < 4 ? setCurrentMusic(currentMusic - 1) : setCurrentMusic(4)}
+    setMusicItems(list)
   }
 
 

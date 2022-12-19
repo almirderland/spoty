@@ -62,7 +62,13 @@ export const SideBar = ({ textSubduedGrey }) => {
                 <div>
                   <Link to={item.id}> {item.name}</Link>
                 </div>
-              ) : (
+              ) : item.id === "home" ?
+              (
+                <div>
+                  <Link to="/"> {item.name}</Link>
+                </div>
+              )
+              :(
                 <p>{item.name}</p>
               )
               }
