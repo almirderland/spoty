@@ -68,7 +68,6 @@ export const Player = () => {
   const [currentMusic, setCurrentMusic] = useState(0);
 
   const handlePlayMusic = () => {
-    // console.log(currentMusic)
     setMusicItems((prevMusicItems) =>
       prevMusicItems.map((item) => {
         if (item.id === currentMusic) {
